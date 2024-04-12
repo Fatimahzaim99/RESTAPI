@@ -46,5 +46,6 @@ Watch a demo of the API in action:
 - C#
 - RESTful API principles
 - Relational Database (Microsoft SQL Server)
+- IDE (Microsoft Visual Studio 2022)
 
 
