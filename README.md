@@ -10,11 +10,11 @@ CDN is a fictional company that provides a platform for listing freelancers base
 
 ## Freelancer Model Attributes
 
-- Username: The unique username of the user.
-- Email: The email address of the user.
-- PhoneNumber: The phone number of the user.
-- Skillsets: The skills possessed by the user.
-- Hobby: The hobbies or interests of the user.
+- Username: The unique username of the freelancer.
+- Email: The email address of the freelancer.
+- PhoneNumber: The phone number of the freelancer.
+- Skillsets: The skills possessed by the freelancer.
+- Hobby: The hobbies or interests of the freelancer.
 
 ## Video Demo
 
@@ -33,11 +33,11 @@ Watch a demo of the API in action:
 
 ## API Endpoints
 
-- **GET /api/freelancers**: Retrieve all users.
-- **GET /api/freelancers/{id}**: Retrieve a user by ID.
-- **POST /api/freelancers**: Register a new user.
-- **PUT /api/freelancers/{id}**: Update an existing user.
-- **DELETE /api/freelancers/{id}**: Delete a user.
+- **GET /api/freelancers**: Retrieve all freelancers.
+- **GET /api/freelancers/{id}**: Retrieve a freelancer by ID.
+- **POST /api/freelancers**: Register a new freelancer.
+- **PUT /api/freelancers/{id}**: Update an existing freelancer.
+- **DELETE /api/freelancers/{id}**: Delete a freelancer.
 
 ## Technologies Used
 
