@@ -25,8 +25,8 @@ Watch a demo of the API in action:
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your/repository.git`
-2. Navigate to the project directory: `cd CDN-Freelancer-Directory-API`
+1. Clone the repository
+2. Navigate to the project directory: `cd CDNwebapi`
 3. Install dependencies: `dotnet restore`
 4. Configure the database connection in `appsettings.json`.
 5. Run the application: `dotnet run`
