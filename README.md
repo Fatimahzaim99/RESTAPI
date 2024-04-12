@@ -1,6 +1,6 @@
 # Complete Developer Network (CDN) - Freelancer Directory API
 
-CDN is a fictional company that provides a platform for listing freelancers based on their skills and hobbies. This project implements a RESTful API using ASP.NET Core Web API to manage user registrations, updates, and deletions.
+CDN is a fictional company that provides a platform for listing freelancers based on their skills and hobbies. This project implements a RESTful API using ASP.NET Core Web API to manage freelancer registrations, updates, and deletions.
 
 ## Features
 
@@ -8,7 +8,7 @@ CDN is a fictional company that provides a platform for listing freelancers base
 - Utilizes HTTP verbs such as GET, POST, PUT, and DELETE for CRUD operations.
 - Stores user data in a relational database using Entity Framework Core.
 
-## User Model Attributes
+## Freelancer Model Attributes
 
 - Username: The unique username of the user.
 - Email: The email address of the user.
@@ -33,11 +33,11 @@ Watch a demo of the API in action:
 
 ## API Endpoints
 
-- **GET /api/users**: Retrieve all users.
-- **GET /api/users/{id}**: Retrieve a user by ID.
-- **POST /api/users**: Register a new user.
-- **PUT /api/users/{id}**: Update an existing user.
-- **DELETE /api/users/{id}**: Delete a user.
+- **GET /api/freelancers**: Retrieve all users.
+- **GET /api/freelancers/{id}**: Retrieve a user by ID.
+- **POST /api/freelancers**: Register a new user.
+- **PUT /api/freelancers/{id}**: Update an existing user.
+- **DELETE /api/freelancers/{id}**: Delete a user.
 
 ## Technologies Used
 
