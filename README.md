@@ -16,6 +16,13 @@ CDN is a fictional company that provides a platform for listing freelancers base
 - Skillsets: The skills possessed by the user.
 - Hobby: The hobbies or interests of the user.
 
+## Video Demo
+
+Watch a demo of the API in action:
+
+[![Demo Video](http://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+
+
 ## Getting Started
 
 1. Clone the repository: `git clone https://github.com/your/repository.git`
