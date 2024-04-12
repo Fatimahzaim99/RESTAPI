@@ -1,0 +1,47 @@
+CREATE DATABASE MyCDN;
+GO
+
+USE MyCDN;
+GO
+
+CREATE TABLE Freelancers (
+    Id INT PRIMARY KEY IDENTITY,
+    Username NVARCHAR(MAX) NOT NULL,
+    Mail NVARCHAR(MAX) NOT NULL,
+    PhoneNumber NVARCHAR(MAX) NOT NULL,
+    Skillsets NVARCHAR(MAX) NOT NULL,
+    Hobby NVARCHAR(MAX)
+);
+GO
+
+ALTER TABLE Freelancers
+ADD CONSTRAINT CHK_Username_NotEmpty CHECK (LEN(Username) > 0);
+
+ALTER TABLE Freelancers
+ADD CONSTRAINT CHK_Mail_ValidEmail CHECK (Mail LIKE '%@%.%');
+
+ALTER TABLE Freelancers
+ADD CONSTRAINT CHK_PhoneNumber_ValidPhone CHECK (PhoneNumber LIKE '[0-9]%' AND LEN(PhoneNumber) >= 10);
+
+INSERT INTO Freelancers (Username, Mail, PhoneNumber, Skillsets, Hobby)
+VALUES
+    ('JohnDoe', 'john.doe@example.com', '1234567890', 'Programming, Web Development', 'Reading'),
+    ('JaneSmith', 'jane.smith@example.com', '9876543210', 'Data Analysis, Machine Learning', 'Gardening'),
+    ('AliceBrown', 'alice.brown@example.com', '5551234567', 'Graphic Design, Illustration', 'Painting'),
+    ('BobJohnson', 'bob.johnson@example.com', '5559876543', 'Marketing, Sales', 'Cooking'),
+    ('EmilyWilson', 'emily.wilson@example.com', '4447890123', 'Writing, Editing', 'Hiking'),
+    ('MichaelLee', 'michael.lee@example.com', '6663334444', 'Networking, System Administration', 'Photography'),
+    ('OliviaGarcia', 'olivia.garcia@example.com', '7772225555', 'Customer Service, Communication', 'Traveling'),
+    ('DanielMartinez', 'daniel.martinez@example.com', '8881112222', 'Project Management, Leadership', 'Playing Guitar'),
+    ('SophiaHernandez', 'sophia.hernandez@example.com', '3338889999', 'Financial Analysis, Accounting', 'Yoga'),
+    ('LiamLopez', 'liam.lopez@example.com', '9994447777', 'Mobile App Development, UX/UI Design', 'Playing Piano'),
+    ('IsabellaGonzalez', 'isabella.gonzalez@example.com', '1115558888', 'Content Creation, Social Media Marketing', 'Dancing'),
+    ('MasonPerez', 'mason.perez@example.com', '2226669999', 'Quality Assurance, Testing', 'Fishing'),
+    ('AvaTorres', 'ava.torres@example.com', '7779993333', 'Research, Academic Writing', 'Reading'),
+    ('LoganRobinson', 'logan.robinson@example.com', '1112223333', 'Customer Support, Troubleshooting', 'Gaming'),
+    ('AmeliaCook', 'amelia.cook@example.com', '4446669999', 'Human Resources, Recruitment', 'Running'),
+    ('BenjaminBailey', 'benjamin.bailey@example.com', '2221114444', 'Business Development, Negotiation', 'Watching Movies'),
+    ('ElijahSanders', 'elijah.sanders@example.com', '8887775555', 'Software Engineering, DevOps', 'Playing Basketball'),
+    ('MiaReed', 'mia.reed@example.com', '5552223333', 'Content Writing, SEO', 'Cycling'),
+    ('AidenMorris', 'aiden.morris@example.com', '9993336666', 'Product Management, Agile Methodologies', 'Cooking'),
+    ('CharlotteWard', 'charlotte.ward@example.com', '6664441111', 'UI/UX Design, Prototyping', 'Reading');
