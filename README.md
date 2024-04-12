@@ -18,10 +18,7 @@ CDN is a fictional company that provides a platform for listing freelancers base
 
 ## Video Demo
 
-Watch a demo of the API in action:
-
-[!](https://youtu.be/EXBj2fo6aCw?feature=shared)
-
+[Watch a demo of the API in action:(https://youtu.be/EXBj2fo6aCw?feature=shared)]
 
 ## Getting Started
 
